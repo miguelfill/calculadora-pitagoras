@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Calculator.png" type="image/x-icon">
+    <title>Teorema de Pitágoras</title>
+</head>
+<body>
+    <div class="container">
+        <div class="primeiraDiv">
+            <p>Ache o valor da hipotenusa e do cateto</p>
+            <button onclick="passarDivs(1, 2)">Calcular hipotenusa</button>
+            <button onclick="passarDivs(1, 4)">calcular cateto</button>
+        </div>
+        <div class="segundaDiv">
+            <h3>Calcule aqui o valor da hipotenusa</h3>
+            <hr><br>
+            <label for="cateto1">Insira o valor de um cateto</label>
+            <input type="number" placeholder="Valor de B" id="cateto1">
+            <br><br>
+            <label for="cateto2">Insira o valor de outro cateto</label>
+            <input type="number" placeholder="Valor de C" id="cateto2">
+            <br><br>
+            <button onclick="validarCamposDiv2()">calcular</button>
+        </div>
+        <div class="terceiraDiv">
+            <h3>O valor da hipotenusa é:</h3>
+            <p id="resultadoHipo"></p>
+        </div>
+        <div class="quartaDiv">
+            <h3>Calcule aqui o valor do outro cateto</h3>
+            <hr>
+            <label for="hipo">Insira o valor da hipotenusa</label>
+            <input type="number" placeholder="Valor da hipotenusa" id="hipo">
+            <br><br>
+            <label for="cateto">Insira o valor de um cateto</label>
+            <input type="number" placeholder="Valor do cateto" id="cateto">
+            <br><br>
+            <button onclick="validarCamposDiv4()">calcular</button>
+        </div>
+        <div class="quintaDiv">
+            <h3>O valor do outro cateto é:</h3>
+            <p id="resultadoCateto"></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
